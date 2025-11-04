@@ -14,7 +14,7 @@ export function transformToWeeklyData(growthData: GrowthData[]): WeeklyGrowthDat
 
     weeklyData.push({
       week: `Week ${Math.floor(i / 7) + 1}`,
-      date: weekData[0].date.toISOString().split("T")[0],
+      date: weekData[0].date,
       challenge: Math.round(avgChallenge),
       persistence: Math.round(avgPersistence),
       completion: Math.round(avgCompletion),
