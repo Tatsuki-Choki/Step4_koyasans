@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 165 35% 93%;
+    --foreground: 148 14% 21%;
+    --card: 0 0% 100%;
+    --card-foreground: 148 14% 21%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 148 14% 21%;
+    --primary: 167 34% 79%;
+    --primary-foreground: 148 14% 21%;
+    --secondary: 0 52% 89%;
+    --secondary-foreground: 148 14% 21%;
+    --muted: 160 32% 87%;
+    --muted-foreground: 148 14% 35%;
+    --accent: 160 32% 87%;
+    --accent-foreground: 148 14% 28%;
+    --destructive: 5 70% 62%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 167 28% 85%;
+    --input: 167 28% 85%;
+    --ring: 167 34% 65%;
+    --radius: 0.75rem;
+    --radius-lg: 1.25rem;
+    --radius-xl: 2rem;
+
+    --theme-ink: 148 14% 21%;
+    --theme-lavender: 167 34% 79%;
+    --theme-blush: 0 64% 94%;
+    --theme-sky: 160 32% 87%;
+    --theme-mint: 165 35% 93%;
+    --theme-border: 165 26% 82%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    line-height: 1.75;
+    background-image: radial-gradient(circle at 20% 20%, hsl(var(--theme-sky) / 0.25) 0%, transparent 55%),
+      radial-gradient(circle at 80% 10%, hsl(var(--theme-blush) / 0.2) 0%, transparent 45%),
+      radial-gradient(circle at 50% 90%, hsl(var(--theme-lavender) / 0.2) 0%, transparent 50%);
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 2;
+  }
+
+}

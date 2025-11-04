@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__filesystem__directory_tree",
+      "mcp__filesystem__list_directory",
+      "Bash(npm run dev:*)",
+      "mcp__playwright-test__planner_setup_page",
+      "mcp__chrome-devtools__new_page",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__chrome-devtools__list_console_messages",
+      "mcp__chrome-devtools__list_network_requests",
+      "mcp__chrome-devtools__resize_page",
+      "mcp__chrome-devtools__click",
+      "mcp__filesystem__list_directory_with_sizes",
+      "mcp__filesystem__read_text_file",
+      "Bash(cat:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(npx tsc:*)",
+      "mcp__chrome-devtools__navigate_page",
+      "mcp__chrome-devtools__get_console_message"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "playwright-test"
+  ]
+}
