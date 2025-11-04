@@ -1,4 +1,4 @@
-import { Student, JournalEntry, GrowthData } from "@prisma/client"
+import type { Student, JournalEntry, GrowthData } from "@/lib/mock-data"
 
 // APIレスポンス型
 export interface ApiResponse<T> {

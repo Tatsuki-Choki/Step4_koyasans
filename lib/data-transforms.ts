@@ -1,5 +1,5 @@
-import type { GrowthData } from "@prisma/client"
 import type { WeeklyGrowthData } from "@/types"
+import type { GrowthData } from "@/lib/mock-data"
 
 export function transformToWeeklyData(growthData: GrowthData[]): WeeklyGrowthData[] {
   const weeklyData: WeeklyGrowthData[] = []
