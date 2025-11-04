@@ -6,6 +6,7 @@ export default function TeacherAnalyticsPage() {
   const sampleStudentId = mockStudents[0]?.id ?? "1"
   const weeklyData = getGrowthDataByStudentId(sampleStudentId).slice(0, 28).map((data, index) => ({
     week: `Week ${index + 1}`,
+    date: data.date,
     challenge: data.challenge,
     persistence: data.persistence,
     completion: data.completion,
